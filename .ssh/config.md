@@ -4,9 +4,10 @@
 2) ssh-keygen -t ed25519 -C "EMAIL_HERE" -f ~/.ssh/keys/github/id_ed25519
 3) ssh-keygen -t ed25519 -C "EMAIL_HERE" -f ~/.ssh/keys/gitlab/id_ed25519
 4) ssh-keygen -t ed25519 -C "EMAIL_HERE" -f ~/.ssh/keys/compose/id_ed25519
-5) ssh-add ~/.ssh/keys/github/id_ed25519 &>/dev/null **add keys to .bashrc, unless system wide add to .profile or .bash_profile**
-6) ssh-add ~/.ssh/keys/gitlab/id_ed25519 &>/dev/null
-7) ssh-add ~/.ssh/keys/compose/id_ed25519 &>/dev/null
+5) nano ~/.bashrc **add keys to .bashrc, unless system wide add to .profile or .bash_profile**
+6) ssh-add ~/.ssh/keys/github/id_ed25519 &>/dev/null 
+7) ssh-add ~/.ssh/keys/gitlab/id_ed25519 &>/dev/null
+8) ssh-add ~/.ssh/keys/compose/id_ed25519 &>/dev/null
 ```
 
 **Configuring SSH_ASKPASS for GUI Passphrase Input**
