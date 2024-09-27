@@ -13,7 +13,7 @@
 **Configuring SSH_ASKPASS for GUI Passphrase Input**
 ```sh
 1) which ksshaskpass **/usr/bin/ksshaskpass for me**
-2) echo 'export SSH_ASKPASS="/usr/lbin/ksshaskpass"' >> ~/.profile **or.bash_profile based on system**
+2) echo 'export SSH_ASKPASS="/usr/bin/ksshaskpass"' >> ~/.profile **or.bash_profile based on system**
 3) echo 'export SSH_ASKPASS_REQUIRE=prefer' >> ~/.profile
 ```
 
