@@ -11,7 +11,7 @@
 
 **Configuring SSH_ASKPASS for GUI Passphrase Input**
 ```sh
-1) echo 'export SSH_ASKPASS="/usr/libexec/ssh/ksshaskpass"' >> ~/.profile **or.bash_profile based on system**
+1) echo 'export SSH_ASKPASS="/usr/lbin/ksshaskpass"' >> ~/.profile **or.bash_profile based on system**
 2) echo 'export SSH_ASKPASS_REQUIRE=prefer' >> ~/.profile
 ```
 
