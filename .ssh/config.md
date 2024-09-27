@@ -8,7 +8,15 @@
 6) ssh-add ~/.ssh/keys/github/id_ed25519 &>/dev/null 
 7) ssh-add ~/.ssh/keys/gitlab/id_ed25519 &>/dev/null
 8) ssh-add ~/.ssh/keys/compose/id_ed25519 &>/dev/null
+
+# If SSH authentication fails after this step:
+# Run `ssh-add ~/.ssh/keys/compose/id_ed25519` manually and check for errors.
+# If you encounter 'Qt: Session management error' or other issues, ensure SSH AskPass or SSH Agent is properly configured.
+
 ```
+
+
+
 
 **Configuring SSH_ASKPASS for GUI Passphrase Input**
 ```sh
@@ -33,7 +41,9 @@
     WantedBy=default.target
 3) systemctl --user enable --now ssh-agent.service **enable it**
 4) systemctl --user status ssh-agent.service **should be running**
-5) ssh-add -l **autoconnect should now be enable reboot and check** 
+5) ssh-add -l **autoconnect should now be enable reboot and check**
+
+# If not, manually add keys using `ssh-add ~/.ssh/keys/compose/id_ed25519` and ensure no session errors occur.
 ```
 
 
