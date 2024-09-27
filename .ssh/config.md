@@ -3,7 +3,7 @@
 Host github.com
     HostName github.com
     User git
-    IdentityFile ~/.ssh/keys/Github/id_ed25519
+    IdentityFile ~/.ssh/keys/github/id_ed25519
     AddKeysToAgent yes
     IdentitiesOnly yes
 
@@ -11,7 +11,7 @@ Host github.com
 Host gitlab.com
     HostName gitlab.com
     User git
-    IdentityFile ~/.ssh/keys/Gitlab/id_ed25519
+    IdentityFile ~/.ssh/keys/gitlab/id_ed25519
     AddKeysToAgent yes
     IdentitiesOnly yes
 
