@@ -1,3 +1,4 @@
+```sh
 # GitHub
 Host github.com
     HostName github.com
