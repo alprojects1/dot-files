@@ -16,8 +16,6 @@
 ```
 
 
-
-
 **Configuring SSH_ASKPASS for GUI Passphrase Input**
 ```sh
 1) which ksshaskpass **/usr/bin/ksshaskpass for me**
