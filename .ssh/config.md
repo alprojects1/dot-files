@@ -12,15 +12,24 @@
 # If SSH authentication fails after this step:
 # Run `ssh-add ~/.ssh/keys/compose/id_ed25519` manually and check for errors.
 # If you encounter 'Qt: Session management error' or other issues, ensure SSH AskPass or SSH Agent is properly configured.
-
 ```
 
 
 **Configuring SSH_ASKPASS for GUI Passphrase Input**
 ```sh
-1) which ksshaskpass **/usr/bin/ksshaskpass for me**
-2) echo 'export SSH_ASKPASS="/usr/bin/ksshaskpass"' >> ~/.profile **or.bash_profile based on system**
-3) echo 'export SSH_ASKPASS_REQUIRE=prefer' >> ~/.profile
+1) sudo apt install ksshaskpass -y
+2) ksshaskpass --version **5.27.11 as of writing**
+3) which ksshaskpass **/usr/bin/ksshaskpass for me**
+4) echo -e 'export SSH_ASKPASS="/usr/bin/ksshaskpass"\nexport SSH_ASKPASS_REQUIRE=prefer' >> ~/.profile **or .bash_profile depending on the system**
+4) echo -e 'export SSH_ASKPASS="/usr/bin/ksshaskpass"\nexport SSH_ASKPASS_REQUIRE=prefer' >> ~/.bashrc **whichever you prefer**
+
+|Or|
+
+1) nano ~/.bashrc or nano ~/.profile
+2) added the below:
+ # ksshaskpass configuration
+ export SSH_ASKPASS="/usr/bin/ksshaskpass"
+ export SSH_ASKPASS_REQUIRE=prefer
 ```
 
 **Systemd for ssh-agent**
