@@ -1,2 +1,4 @@
-# dotfiles
-Collection of configuration files
+<p align="center">
+  <strong>🄳🄾🅃-🄵🄸🄻🄴🅂</strong><br>
+  <strong>🄲🄾🄻🄻🄴🄲🅃🄸🄾🄽 🄾🄵 🄲🄾🄽🄵🄸🄶🅄🅁🄰🅃🄸🄾🄽 🄵🄸🄻🄴🅂</strong><br>
+</p>
